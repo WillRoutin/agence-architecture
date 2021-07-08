@@ -1,0 +1,60 @@
+html, body {
+  font-size: 16px;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  font-family: 'Poppins';
+}
+
+.hero {
+  background-color: #181F41;
+  color: white;
+  width: 100%;
+  height: 1152px;
+}
+
+.hero .header {
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 75px;
+}
+
+.hero .header p {
+  margin-right: auto;
+  margin-left: 130px;
+  font-size: 25px;
+  font-weight: 400;
+}
+
+.hero .header .menu {
+  margin-left: auto;
+  margin-right: 130px;
+  font-size: 15px;
+  font-weight: 300;
+}
+
+.hero .header .menu ul {
+  list-style-type: none;
+}
+
+.hero .header .menu ul li {
+  padding: 0 25;
+  display: inline;
+}
+
+.hero .header .menu ul li .active {
+  color: #1A59E7;
+  text-decoration: underline;
+}
+
+.hero .header .menu ul li .non_active {
+  color: white;
+  text-decoration: none;
+}
+/*# sourceMappingURL=main.css.map */

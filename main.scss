@@ -1,46 +1,47 @@
 $primary: #181F41;
 $accent: #1A59E7;
+$neutral500 : #76858E;
 $neutral800 : #454E54;
 $neutral900 : #1B1F31;
 
 html, body{
-    font-size: 16px;
+    font-size: 20px;
     padding: 0;
     margin: 0;
     width: 100%;
     height: 100%;
     font-family: 'Poppins';
+    justify-content: center;
+}
+
+.bg_color {
+    z-index: -1;
+    background-color: $primary;
+    position: absolute;
+    height: 1024px;
+    width: 100%;
 }
 
 .hero {
+width: 1200px;
+margin: auto;
 color: white;
-width: 100%;
 height: 1152px;
-
-    .bg_color {
-        z-index: -1;
-        background-color: $primary;
-        position: absolute;
-        height: 1024px;
-        width: 100%;
-    }
+align-items: center;
 
     .header{
-    margin : auto;
     display:flex;
     align-items: center;
     height: 75px;
 
         p {
             margin-right: auto;
-            margin-left: 130px;
             font-size: 25px;
             font-weight: 400;
         }
 
         .menu {
             margin-left: auto;
-            margin-right: 130px;
             font-size: 15px;
             font-weight: 300;
 
@@ -75,16 +76,13 @@ height: 1152px;
     .big_baseline {
         margin-right: auto;
         margin: 0px;
-        margin-left: 130px;
         font-size: 100px;
         font-weight: 700;
         align-self: flex-start;
-
     }
 
     .little_baseline {
         margin-left: auto;
-        margin-right: 138px;
         font-size: 20px;
         font-weight: 300;
         align-self: flex-end;
@@ -100,8 +98,7 @@ height: 1152px;
         .s-list{
             margin-right :auto;
             margin-top: auto;
-            margin-left: 130px;
-            margin-bottom:157px;
+            margin-bottom:130px;
             display:flex ;
             height: 15px;
             justify-content: center;
@@ -126,7 +123,7 @@ height: 1152px;
         
         .s-image{
             margin-left :auto;
-            /* margin-right : -100px; */
+            margin-right : -450px;
             display:flex ;
             justify-content: center;
             align-content: center;
@@ -150,17 +147,17 @@ height: 1152px;
     margin : auto;
     display: flex;
     flex-direction: column;
+    width : 1200px;
     height: 1299px;
 
     .title {
 
-            p {
-            color:$neutral900;
-            font-size: 80px;
-            font-weight: 700;
-            float: right;
-            margin-right: 189px;
-            margin-bottom: 10px;
+        p {
+        color:$neutral900;
+        font-size: 80px;
+        font-weight: 700;
+        margin-bottom: 10px;
+        text-align: right;
         }
     }
 
@@ -171,7 +168,6 @@ height: 1152px;
 
         .img{
             margin-right: auto;
-            margin-left: 130px;
 
             img {
                 width : 580px;
@@ -182,7 +178,6 @@ height: 1152px;
 
         .project_type {
             margin-left: auto;
-            margin-right: 130px;
             width: 515px;
 
             p {
@@ -217,22 +212,22 @@ height: 1152px;
     flex-direction: column;
     margin: auto;
     margin-top: 224px;
-    width : 1280px;
+    width : 1286px;
 
     .list {
         display:flex ;
-        justify-content: center;
         align-content: center;
+        justify-content: space-around;
         flex-wrap:  wrap ;
+        max-width: 1286px;
 
         .l-item {
-            background-color: $accent;
-            margin : 26 43;
 
             img {
                 width : 231px;
                 height : 231px;
                 object-fit: cover;
+                margin : 43;
             }
         }
     }
@@ -251,8 +246,9 @@ height: 1152px;
     margin-top: 158px;
 
     p {
-        float:right;
-        margin-right: 130px;
+        width: 1200px;
+        margin : auto;
+        text-align:right;
     }
 
     img {
@@ -264,10 +260,11 @@ height: 1152px;
     }
 
     .t-next {
+        width: 1200px;
+        margin : auto;
         display: flex;
         flex-direction: row-reverse;
         align-items: flex-end;
-        margin-right: 130px;
         margin-top: -35px;
 
         .tn-list{
@@ -305,4 +302,185 @@ height: 1152px;
         }
     }
 
+}
+
+.four {
+    margin : auto;
+    width: 1200px;
+    margin-top: 219px;
+
+    .container{
+        margin:auto;
+        display: flex;
+        flex-direction: row;
+        align-items: flex-end;
+        color : black;
+
+        .project_type {
+            margin-right: auto;
+            flex-direction: column;
+
+            .title {
+                width: 618px;
+                color:$neutral900;
+                font-size: 80px;
+                font-weight: 700;
+            }
+
+            .text {
+                margin-top : 489px;
+                width: 601px;
+            }
+
+            .identity {
+                font-size: 20px;
+                color: $accent;
+            }
+
+        }
+
+        .img{
+            margin-left: auto;
+
+            img {
+                width : 580px;
+                height : 832px;
+                object-fit: cover;
+            }
+        }
+    }
+
+    .staff {
+        margin:auto;
+        display: flex;
+        flex-direction: row;
+        margin-top: 136px;
+
+        img {
+            margin-right: auto;
+            width : 383px;
+            height : 514px;
+            object-fit: cover;
+        }
+
+        .s-list {
+            display:flex ;
+            justify-content: space-around;
+            align-content: center;
+            flex-wrap:  wrap ;
+            width: 750px;
+            margin-left: 0;
+
+            .sl-item {
+                width : 206px;
+                height : 235px;
+                background-color: $primary;
+                object-fit: cover;
+                margin : 13 22;
+            }
+        }
+    }
+
+}
+
+.five {
+    width: 1200px;
+    height : 974px;
+    margin : auto;
+    margin-top: 219px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    .f-title {
+        width: 618px;
+        color:$neutral900;
+        font-size: 80px;
+        font-weight: 700;
+    }
+
+    .f-list {
+        margin: auto;
+        width: 1183px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+
+        .fl-item{
+
+            .fli-titletext {
+                border-left :2px solid $accent;
+                padding-left: 20px;
+                margin-bottom: 20px;
+
+                .flit-title {
+                    margin-top: 0px;
+                    color: $neutral900;
+                    font-size: 25px;
+                    font-weight: 400;
+                }
+
+                .flit-text {
+                    margin-bottom: 0px;
+                    color: $neutral500;
+                    font-size: 15px;
+                    font-weight: 300;
+                }
+            }
+
+            img {
+                width : 360px;
+                height : 402px;
+                object-fit: cover;
+            }
+        }
+    }
+
+    .f-actuality {
+        margin: 58 auto;
+        font-size: 20px;
+        color: $accent;
+    }
+}
+
+.footer {
+    margin: auto;
+    margin-top: 131px;
+    height: 450px;
+    background-color: #FEEFD9;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    img {
+        width : 100px;
+        height : 100px;
+        object-fit: cover;
+    }
+
+    p {
+        margin : 0;
+        font-size: 30px;
+        color: $primary;
+        font-weight: 400;
+    }
+
+    .f-menu {
+        font-size: 16px;
+        font-weight: 400;
+
+        ul {
+            padding : 0;
+            
+            li {
+                display: inline;
+
+                a {
+                    color : $accent;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
 }
